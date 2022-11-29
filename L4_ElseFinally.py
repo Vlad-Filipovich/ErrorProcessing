@@ -9,7 +9,7 @@ while True:
         print()
         print(f'Result: {number / 2}')
         print()
-    except:
+    except ValueError:
         print('You have to enter a number')
     else:
         print('Good job! This is a number')
@@ -18,3 +18,16 @@ while True:
         print('Finally block')
 
 print('See you!')
+
+# def divide(x, y):
+#     try:
+#         return x / y
+#     except ZeroDivisionError as e:
+#         print('You can\' divide by zero')
+#         print(e)
+#     except TypeError as e:
+#         print('x and y must be numbers')
+#         print(e)
+#
+#
+# print(divide(4, 2))
